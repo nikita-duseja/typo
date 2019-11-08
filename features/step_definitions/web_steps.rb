@@ -55,11 +55,11 @@ And /^I am logged into the admin panel$/ do
   end
 end
 
-Given /^A sample category is setup$/ do
-  Category.create!({name: "sample-cat",
-                    keywords: "sample-keyword",
-                    permalink: "some perma",
-                    description: "Sample Desc"})
+Given /^A test category is already created$/ do
+  Category.create!({name: "test-category",
+                    keywords: "test-keyword",
+                    permalink: "no",
+                    description: "description test"})
 end
 
 # Single-line step scoper
